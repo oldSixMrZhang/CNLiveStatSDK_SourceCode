@@ -1,0 +1,16 @@
+use_frameworks!
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'http://bj.gitlab.cnlive.com/ios-team/CNLiveRepos.git'
+
+platform :ios, '9.0'
+
+target 'CNLiveStatSDK_SourceCode_Example' do
+  pod 'CNLiveStatSDK_SourceCode', :path => '../'
+
+  target 'CNLiveStatSDK_SourceCode_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
